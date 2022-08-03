@@ -1,0 +1,44 @@
+.banner-color {
+    background-color: #FFF9F4;
+}
+
+.headline-color {
+    color: #FA804C;
+}
+
+.img-bg-color {
+    background-color: #F1F1F1;
+}
+
+.img-size {
+    width: 240;
+    height: 260;
+}
+
+.btn-design {
+    background-image: linear-gradient(to right, #ff4992 0%, #ff3182 51%, #ff1b74 100%)
+}
+
+.btn-design {
+    padding: 9px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.btn-design:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-res {
+    max-width: 100%;
+    height: auto;
+}
