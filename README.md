@@ -1,7 +1,7 @@
-# Full Stack Website
+# Web Final Project
 
-## Using Bootstrap and PHP
+**Using Bootstrap and PHP**
 
-### Web Final Project
+_Full Stack Website_
 
 [Live Site]()
