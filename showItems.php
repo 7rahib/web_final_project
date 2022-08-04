@@ -15,7 +15,7 @@
                         </div>
                         <div class='d-flex justify-content-between'>
                             <h2 class='headline-color'>$$row[price]</h2>
-                            <button class='btn btn-design'><i class='fas fa-shopping-cart me-2'></i>Buy Now</button>
+                            <button class='btn btn-design' ><i class='fas fa-shopping-cart me-2'></i><a style='text-decoration: none; color: #ffffff' href='updateProduct.php?id=$row[id]'>Update</a></button>
                         </div>
                     </div>
                 </div>
