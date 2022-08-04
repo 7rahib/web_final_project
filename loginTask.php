@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 if($result->num_rows>0){
     session_start();
     $_SESSION['username'] = $l_email;
-    echo "<script>location.href='index.html'</script>";
+    echo "<script>location.href='index.php'</script>";
 }
 else{
     echo "<script>location.href='login.html'</script>";
