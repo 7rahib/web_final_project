@@ -57,37 +57,52 @@
         </nav>
     </header>
     <section>
-        <div class="container-fluid row flex justify-content-center mt-5">
+        <div class="container-fluid row d-flex justify-content-center mt-5">
             <div class="col col-sm-8 col-lg-6 shadow p-3 rounded">
-                <h3 class="text-center">Update Product</h3>
-                <form action="updateAction.php" method="POST" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Product Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            name="product" value="<?php echo $row['name'] ?>">
+                <div>
+                    <h3 class="text-center">Update Product</h3>
+                    <div class='d-flex flex-column-reverse'>
+                        <div>
+                            <form action="updateAction.php" method="POST" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" name="product" value="<?php echo $row['name'] ?>">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Price</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" name="price"
+                                        value="<?php echo $row['price'] ?>">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        name="description" value="<?php echo $row['description'] ?>">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Image</label>
+                                    <input type="file" class="form-control" id="exampleInputPassword1" name="image"
+                                        required>
+                                </div>
+                                <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
+                                <div class="flex justify-content-center">
+                                    <button type="submit" class="btn btn-success text-white">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class='d-flex justify-content-end'>
+                            <button class="btn btn-danger text-white"><?php
+                            echo"
+                            <a href='deleteAction.php?id=$row[id]'
+                                    style='text-decoration: none; color:#ffffff;'>Delete this product</a>
+                            ";
+                            ?></button>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Price</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" name="price"
-                            value="<?php echo $row['price'] ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Description</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" name="description"
-                            value="<?php echo $row['description'] ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Image</label>
-                        <input type="file" class="form-control" id="exampleInputPassword1" name="image" required>
-                    </div>
-                    <input type="hidden" name="id" value="<?php echo $row['id'] ?>">
-                    <div class="flex justify-content-center">
-                        <button type="submit" class="btn btn-secondary text-white">Submit</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </section>c
+    </section>
 </body>
 
 </html>

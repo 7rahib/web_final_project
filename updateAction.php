@@ -2,7 +2,7 @@
     include 'config.php';
 
     $id = $_POST['id'];
-    $name = $_POST['name'];
+    $name = $_POST['product'];
     $price = $_POST['price'];
     $description = $_POST['description'];
     $image = $_FILES['image'];
