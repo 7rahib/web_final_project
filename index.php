@@ -76,70 +76,13 @@
     </section>
     <main>
         <section class="container-fluid mx-auto" id="products">
-            <h2>CASUAL SHOES</h2>
+            <h2 class="text-center m-2">SHOES</h2>
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
                 <?php
                 include 'showItems.php';
             ?>
                 <div>
         </section>
-
-        <section class="container-fluid mb-5 mt-5 mx-auto">
-            <h2>Formal SHOES</h2>
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 ">
-                <div class="col ">
-                    <div class="card h-100 p-3 shadow ">
-                        <div>
-                            <img src="assets/images/Mask Group.png " class="card-img-top img-fluid" alt="... ">
-                        </div>
-
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="d-flex justify-content-between ">
-                            <h2 class="headline-color ">$234</h2>
-                            <button class="btn btn-design "><i class="fas fa-shopping-cart me-2 "></i>Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="card h-100 p-3 shadow ">
-                        <div>
-                            <img src="assets/images/Rectangle 38.png " class="card-img-top img-fluid" alt="... ">
-                        </div>
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
-                        </div>
-                        <div class="d-flex justify-content-between ">
-                            <h2 class="headline-color ">$234</h2>
-                            <button class="btn btn-design "><i class="fas fa-shopping-cart me-2 "></i>Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="card h-100 p-3 shadow ">
-                        <div>
-                            <img src="assets/images/Rectangle 39.png " class="card-img-top img-fluid" alt="... ">
-                        </div>
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in
-                                to additional content. This card has even longer content than the first to show that
-                                equal height action.</p>
-                        </div>
-                        <div class="d-flex justify-content-between ">
-                            <h2 class="headline-color ">$234</h2>
-                            <button class="btn btn-design "><i class="fas fa-shopping-cart me-2 "></i>Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="container-fluid mb-5 mt-5 mx-auto" id="about">
             <h1 class="text-center">About Us</h1>
             <div class="row d-flex justify-content-between ">
