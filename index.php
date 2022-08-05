@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Store</title>
+    <title>Penguin Fashion</title>
     <!-- bootstrap-css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -59,7 +59,7 @@
 
         </nav>
     </header>
-    <section class="banner-color mb-5">
+    <section class="banner-color">
         <section class="container">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-lg-6 col-md-4 ">
@@ -78,7 +78,7 @@
     </section>
 
     <section>
-        <h1 class="text-center">Showcase</h1>
+        <h1 class="text-center mt-2">Showcase</h1>
         <div class="d-flex">
             <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
                 <div class="carousel-inner ">
@@ -181,8 +181,15 @@
 
         </section>
     </main>
-    <footer class="text-center">
-        <small>©2022. Web Final Project. All rights reserved. Naimur Rashid Rahib.</small>
+    <footer class="d-flex justify-content-between p-5 align-items-center bg-dark ">
+        <div>
+            <small class="text-white ">© 2022 Web Final Project. All rights reserved.</small>
+        </div>
+        <div>
+            <p class="text-white text-center ">Download our App</p>
+            <a href="#"><img src="assets/icons/app-store-badge.svg" alt=" " width="135 " height="40 "></a>
+            <a href="#"><img src="assets/icons/google-play-badge.svg" alt=" " width="135 " height="40 "></a>
+        </div>
     </footer>
 
 
