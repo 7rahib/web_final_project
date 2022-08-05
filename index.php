@@ -110,8 +110,8 @@
                 </button>
             </div>
             <div class="d-flex align-items-center text-center m-5">
-                <h4 class="ms-3">A place to look for all your favourite <span class="fs-1">Shoes</span></h4>
-                <img src="assets/icons/Logo.png" alt="" width="300" height="40">
+                <h5 class="ms-3">A place to look for all your favourite <span class="fs-1">Shoes</span></h5>
+                <img class="ms-2" src="assets/icons/Logo.png" alt="" width="300" height="40">
             </div>
         </div>
     </section>
