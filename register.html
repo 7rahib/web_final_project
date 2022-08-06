@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/d9f2e7b9eb.js" crossorigin="anonymous"></script>
     <!-- custon css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="js/validate.js"></script>
 </head>
 
 <body>
@@ -51,33 +52,34 @@
         <div class="container-fluid row flex justify-content-center mt-5">
             <div class="col col-sm-8 col-lg-6 shadow p-3 rounded">
                 <h3 class="text-center">Register</h3>
-                <form action="insert.php" method="POST">
+                <form action="insert.php" method="POST" onsubmit="return formValidate()">
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="exampleInputPassword4" name="name">
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                        <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2">
+                        <input type="password" class="form-control" id="cpassword">
                     </div>
                     <div class="flex justify-content-center">
                         <button type="submit" class="btn btn-secondary text-white">Submit</button>
                     </div>
+                    <p style="color: red;" id="par"></p>
                     <div class="mt-2">
                         <h6>Already have an account ? <a href="login.html">Login here</a></h6>
                     </div>
                 </form>
             </div>
         </div>
-    </section>c
+    </section>
 </body>
 
 </html>

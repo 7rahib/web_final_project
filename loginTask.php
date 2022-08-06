@@ -15,8 +15,13 @@ if($result->num_rows>0){
     echo "<script>location.href='index.php'</script>";
 }
 else{
+    echo "<script>alert('Password or Email do not match')</script>";
     echo "<script>location.href='login.html'</script>";
 }
 
 }
+else{
+    echo "<script>alert('You have used some unauthorized characters')</script>";
+    echo "<script>location.href = 'login.html'</script>";
+  }
 ?>
